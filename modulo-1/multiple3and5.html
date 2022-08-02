@@ -1,0 +1,25 @@
+<html>
+    <script>
+        function checkDivision(number) {
+            if (number % 3 === 0 || number % 5 === 0) {
+                return true;
+            } else {
+                return false;
+            };
+        }
+
+        var sum = 0;
+        var list = [];
+
+        for (var i = 3; i <= 999; i++ ){
+            if (checkDivision(i)) {
+                sum = sum + i;
+                list.push(i);
+            };
+        };
+
+        console.log(sum);
+        console.log(list);
+        
+    </script>
+</html>

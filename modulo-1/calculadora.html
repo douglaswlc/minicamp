@@ -1,0 +1,28 @@
+<html>
+    <script>
+        //SOMA, SUBTRAÇÃO, MULTIPLICAÇÃO, DIVISÃO, RESTO, PORCENTAGEM
+        function calculator(operation, num1, num2) {
+            var result;
+            
+            if(operation === "SOMA") {
+                result = num1 + num2;
+            } else if(operation === "SUBTRACAO"){
+                result = num1 - num2;
+            } else if(operation === "MULTIPLICACAO"){
+                result = num1 * num2;
+            } else if(operation === "DIVISAO"){
+                result = num1 / num2;
+            } else if(operation === "RESTO"){
+                result = num1 % num2;
+            } else if(operation === "PORCENTAGEM"){
+                result = num1 * num2 / 100;
+            } else {
+                console.log("Operação inválida");
+            }
+
+            return result;
+        }
+
+        
+    </script>
+</html>
